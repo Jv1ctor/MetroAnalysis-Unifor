@@ -5,7 +5,8 @@ import Linear.Matrices.MatrixOperators
 import org.example.relationFunctions.isTransitive
 
 fun transitiveClosure(project: Matrix): Matrix {
-    val closure = Matrix(project.rows, project.columns, project.elements)
+    val elements = project.elements.copyOf()
+    val closure = Matrix(project.rows, project.columns, elements)
     val size = project.rows
     var changed: Boolean
 

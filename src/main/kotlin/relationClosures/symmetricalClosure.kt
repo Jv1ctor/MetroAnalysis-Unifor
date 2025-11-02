@@ -10,9 +10,9 @@ fun symmetricalClosure(project: Matrix): Matrix{
         return project
     }
 
-
+    val elements = project.elements.copyOf()
     val transposeMatrix = MatrixOperators.transpose(project)
-    val newMatrix = Matrix(project.rows, project.columns, project.elements)
+    val newMatrix = Matrix(project.rows, project.columns, elements)
     for(i in 0 until newMatrix.rows){
         for (j in 0 until newMatrix.columns){
             if(newMatrix.get(i, j) != transposeMatrix.get(i, j)){

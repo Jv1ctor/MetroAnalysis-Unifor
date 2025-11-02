@@ -11,7 +11,8 @@ fun reflectiveClosure(project: Matrix): Matrix{
         return project
     }
 
-    val newMatrix = Matrix(project.rows, project.columns, project.elements)
+    val elements = project.elements.copyOf()
+    val newMatrix = Matrix(project.rows, project.columns, elements)
 
     setMainDiagonal(newMatrix, 0f, 1f)
 
