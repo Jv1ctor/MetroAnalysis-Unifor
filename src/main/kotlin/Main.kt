@@ -39,7 +39,7 @@ fun main() {
 
     val reflective = reflectiveClosure(project10)
     println("fecho reflexivo:\n$reflective")
-    println("fecho é transitivo: ${isReflective(reflective)}")
+    println("fecho é reflexivo: ${isReflective(reflective)}")
 
     println("é simetrica: ${isSymmetrical(project10)}")
 
