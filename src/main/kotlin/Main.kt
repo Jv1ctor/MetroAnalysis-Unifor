@@ -16,10 +16,12 @@ import org.example.typedRelation.isRelationOrder
 import org.example.utils.composition
 
 fun main() {
+
+    val teste = "asdadad"
     val project10 = Matrix(6, 6, floatArrayOf(
         1f, 1f, 0f, 0f, 0f, 0f,
         1f, 1f, 1f, 0f, 0f, 1f,
-        0f, 0f, 1f, 0f, 0f, 0f,
+        0f, 0f, 1f, 10f, 0f, 0f,
         0f, 0f, 0f, 1f, 0f, 1f,
         0f, 0f, 0f, 1f, 1f, 1f,
         0f, 1f, 0f, 0f, 1f, 1f,
